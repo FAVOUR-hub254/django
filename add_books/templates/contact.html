@@ -1,48 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>CONTACT</title>
-    <link rel="stylesheet" href="../../static/assets/styles/bootstrap-5.3.8-dist/css/bootstrap.css">
-</head>
-<body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-<h1 class="title">CONTACT PAGE</h1>
+{% extends 'base.html' %}
+{% block title %}
+    Contact - Contact Us
+{% endblock %}
+{% block content %}
+
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15415.047619335657!2d36.792474487158195!3d-1.2949226999999903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11c8824adfff%3A0xadb9908d4929ab8b!2sMaktaba%20Kuu%20-%20Kenya%20National%20Library%20Service!5e1!3m2!1sen!2ske!4v1771227605234!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</body>
-</html>
+<div>
+  <form>
+     <label> Enter your Name</label><br>
+    <input type="text"><br><br>
+    <label>Enter your Email</label><br>
+    <input type="email"><br><br>
+    <label>Enter your Suggestion(s)</label><br>
+    <input type="text">
+  </form>
+</div>
+{% endblock %}
